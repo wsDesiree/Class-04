@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with JavaScript</title>
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous">
+    </script> -->
+
+    <style type="text/css">
+        .jumbotron {
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            background-color: var(--bs-light);
+            border-radius: .3rem;
+        }
+    </style>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Hello
+    </p>
+    <div class="">
+        <div class="text-center">
+            <button type="button" class="btn-crazy btn btn-lg btn-danger" onclick="changeColor()">
+            My button
+            </button>
+        </div>   
+    </div>
+    <script>
+        var red;
+        var green;
+        var blue;
+            const div = document.getElementById("container");
+        function changeColor() {
+            changetextColor();
+            changebgColor();
+        }
+        function changebgColor(){
+            red = Math.floor(Math.random()* 255);
+            green = Math.floor(Math.random()* 255);
+           blue = Math.floor(Math.random()* 255);
+
+            document.body.style.backgroundColor = "rgb("+red+","+green+","+blue+")";                     
+        }
+        function changetextColor(){
+            red = Math.floor(Math.random()* 255);
+            green = Math.floor(Math.random()* 255);
+           blue = Math.floor(Math.random()* 255);
+
+            document.body.style.color = "rgb("+red+","+green+","+blue+")";  
+            
+            
+        }
+
+    </script>
+</body>
+
+</html>
